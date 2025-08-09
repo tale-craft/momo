@@ -1,0 +1,7 @@
+# _headers
+
+# Set correct MIME types for JS and CSS files
+/assets/*.js
+  Content-Type: application/javascript
+/assets/*.css
+  Content-Type: text/css

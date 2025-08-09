@@ -1,0 +1,20 @@
+name = "momo-api"
+main = "src/index.ts"
+compatibility_date = "2025-08-08"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "momo"
+database_id = "30acdbb9-9e37-4298-9aee-b6488e7ae266"
+
+[[r2_buckets]]
+binding = "R2"
+bucket_name = "momo-assets"
+
+[vars]
+FRONTEND_URL = "https://momo.lyle.im"
+EMAIL_FROM = "noreply@momo.lyle.im"
+
+[observability]
+enabled = true
+head_sampling_rate = 1
