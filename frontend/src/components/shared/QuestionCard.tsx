@@ -13,13 +13,17 @@ interface QuestionCardProps {
 export function QuestionCard({ question, isLink = true }: QuestionCardProps) {
   const { t } = useTranslation();
 
-  const askerName = question.is_private
-    ? t("common.anonymous")
-    : question.asker_name || t("common.anonymous");
+  // const askerName = question.is_private
+  //   ? t("common.anonymous")
+  //   : question.asker_name || t("common.anonymous");
 
-  const askerAvatar = question.is_private
-    ? undefined // 私密问题不显示提问者头像
-    : question.asker_avatar;
+  // const askerAvatar = question.is_private
+  //   ? undefined // 私密问题不显示提问者头像
+  //   : question.asker_avatar;
+
+  const askerName = t("common.anonymous");
+
+  const askerAvatar = undefined;
 
   const formatDate = (dateString?: string) => {
     if (!dateString) return "";
